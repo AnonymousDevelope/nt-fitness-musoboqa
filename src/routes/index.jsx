@@ -5,11 +5,11 @@ import { Footer, Header } from "../components/layouts";
 const index = memo(() => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main className="main">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 });

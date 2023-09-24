@@ -3,7 +3,7 @@ import { memo } from "react";
 const index = memo(() => {
   return (
     <>
-      <h1>Error</h1>
+      <h1>Sahifa topilmadi iltimos tekshirib ko'ring</h1>
     </>
   );
 });
