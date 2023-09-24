@@ -1,9 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import AdminSidebar from "../../components/AdminLayouts/AdminSidebar";
 
 const index = () => {
     return (
-        <Outlet />
+        <section style={{ display: 'flex' }}>
+            <AdminSidebar />
+            <Outlet />
+        </section>
     )
 }
 

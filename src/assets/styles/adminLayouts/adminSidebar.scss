@@ -1,0 +1,46 @@
+.admin__sidebar {
+    width: 345px;
+    // height: 2310px;
+    height: 100vh;
+    background: var(--color-purple, #4D44B5);
+
+    .admin__logo {
+        position: relative;
+        bottom: 40px;
+        display: block;
+        margin: 0 auto;
+        width: 265px;
+        height: 235px;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .admin__sidebar__container {
+        position: relative;
+        bottom: 70px;
+        a {
+            width: 299px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 16px 24px;
+            float: right;
+            margin-top: 8px;
+            border-radius: 60px 0 0 60px;
+
+            span {
+                color: var(--color-gray-2, #C1BBEB);
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+        }
+        .active{
+            background: var(--color-background, #D8EDF7);
+        }
+    }
+}
