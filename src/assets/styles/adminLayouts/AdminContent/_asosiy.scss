@@ -1,0 +1,79 @@
+.asosiy__dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard {
+    width: 1180px;
+    height: 2310px;
+    background: var(--color-background, #D8EDF7);
+    padding: 50px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+
+        .title {
+            color: var(--color-text, #303972);
+            font-family: Poppins;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .search__label {
+            display: flex;
+            width: 350px;
+            height: 60px;
+            padding: 2px 32px 2px 0px;
+            align-items: center;
+            border-radius: 40px;
+            background: var(--color-white, #FFF);
+            padding: 23px 32px;
+
+            .search__input {
+                border: none;
+                outline: none;
+                margin-left: 16px;
+            }
+        }
+    }
+
+    .dashboard__info {
+        width: 1080px;
+        height: 172px;
+        border-radius: 20px;
+        background: var(--color-white, #FFF);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        li{
+            display: flex;
+            align-items: center;
+            div{
+                h3{
+                    color: var(--color-gray-3, #A098AE);
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                h1{
+                    color: var(--color-text, #303972);
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+        li:first-child >div{
+          margin-left: 16px;  
+        }
+    }
+}

@@ -2,6 +2,7 @@ import Routes from "./routes";
 import { lazy, Suspense } from "react";
 import { Loader } from "./components/layouts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Asosiy, Jihozlar, Mahsulotlar, Mijozlar, SavolJavob, Sitatistika, Ustozlar } from "./components/AdminLayouts/AdminContent";
 
 const App = () => {
   const User = lazy(() => import("./pages/User"));
@@ -22,7 +23,36 @@ const App = () => {
     {
       path: "/admin",
       element: <Admin />,
-      children: []
+      children: [
+        {
+          path: "asosiy",
+          element: <Asosiy />,
+        },
+        {
+          path: "ustozlar",
+          element: <Ustozlar />,
+        },
+        {
+          path: "mijozlar",
+          element: <Mijozlar />,
+        }, 
+        {
+          path: "jihozlar",
+          element: <Jihozlar />,
+        },  
+        {
+          path: "maxsulotlar",
+          element: <Mahsulotlar />,
+        }, 
+        {
+          path: "savol-javob",
+          element: <SavolJavob />,
+        }, 
+        {
+          path: "statistika",
+          element: <Sitatistika />,
+        },
+      ]
     },
     {
       path: "/user",
