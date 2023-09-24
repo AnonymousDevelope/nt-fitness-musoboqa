@@ -2,9 +2,13 @@ import React, { memo } from "react";
 
 const index = memo(() => {
   return (
-    <>
-      <h1>Login</h1>
-    </>
+   <section className="login">
+    <div className="login__left">
+      <div className="logo__img">
+
+      </div>
+    </div>
+   </section>
   );
 });
 
