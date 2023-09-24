@@ -4,10 +4,10 @@ import { Loader } from "./components/layouts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const App = () => {
-  const Home = lazy(() => import("./pages/Home"));
+  const User = lazy(() => import("./pages/User"));
   const Admin = lazy(() => import("./pages/Admin"));
   const Login = lazy(() => import("./pages/Login"));
-  // const Error = lazy(() => import("./pages/Error"));
+  const Error = lazy(() => import("./pages/Error"));
   // const Verify = lazy(() => import("./pages/VerifyCode"));
   // const ResendCode = lazy(() => import("./pages/ResendCode"));
   // const Registration = lazy(() => import("./pages/Registration"));
@@ -17,18 +17,32 @@ const App = () => {
   const routes = createBrowserRouter([
     {
       path: "/",
-      element: <Login/>,
-    //   children: [
-    //       {
-    //   path: "/",
-    //   element: <Login />,
-    // },
-        // {
-        //   path: "/",
-        //   element: <Home />,
-        // },
-      // ],
-    },   
+      element: <Login />,
+    },
+    {
+      path: "/admin",
+      element: <Admin />,
+      children: []
+    },
+    {
+      path: "/user",
+      element: <User />,
+      children: [
+        //     {
+        //       path: "/",
+        //       index 
+        //       element: <page />,
+        //     },      //     {
+        //       path: "/nimadir",
+        //       element: <page />,
+        //     },
+      ]
+    },
+    {
+      path: "*",
+      element: <Error />,
+    },
+
     // {
     //   path: "/admin",
     //   element: <Admin />,
@@ -39,11 +53,7 @@ const App = () => {
     //     },
     //   ],
     // },
-    // {
-    //   path: "*",
-    //   element: <Error />,
-    // },
-  
+
     // {
     //   path: "/registration",
     //   element: <Registration />,
