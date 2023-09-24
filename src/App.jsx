@@ -17,17 +17,17 @@ const App = () => {
   const routes = createBrowserRouter([
     {
       path: "/",
-      element: <Routes />,
-      children: [
-          {
-      path: "/",
-      element: <Login />,
-    },
+      element: <Login/>,
+    //   children: [
+    //       {
+    //   path: "/",
+    //   element: <Login />,
+    // },
         // {
         //   path: "/",
         //   element: <Home />,
         // },
-      ],
+      // ],
     },   
     // {
     //   path: "/admin",
