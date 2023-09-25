@@ -45,7 +45,7 @@ function index() {
               <h3>Mijoz Ma'lumotlari</h3>
             </div>
             <div className="card">
-              {/* Outlet save */}
+              {/* Outlet save component */}
             </div>
           </main>
         </section>
