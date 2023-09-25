@@ -1,10 +1,10 @@
 .sidebar-menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
+    width: auto;
     height: 100%;
-    position: absolute;
+    position: fixed;
     background-color: $color-purple;
     bottom: 0;
     left: 0;
