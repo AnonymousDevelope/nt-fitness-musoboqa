@@ -9,6 +9,7 @@ const index = () => {
             <Outlet />
         </section>
     )
+
 }
 
 export default index
