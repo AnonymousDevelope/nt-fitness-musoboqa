@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import { MenuItem } from '../../../assets/images/svg';
 
 function Index() {
-  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const Active = (idx) =>{
     setCurrentIndex(idx);
   }
   return (
     <>
-      <div className="sidebar-menu">
+      <div className="sidebar-menu col-xl-3">
         <div className="logo-menu brand">
           <img src={Logo} alt="" />
         </div>
