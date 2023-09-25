@@ -3,6 +3,8 @@
     // height: 2310px;
     height: 100vh;
     background: var(--color-purple, #4D44B5);
+    position: fixed;
+    z-index: 1;
 
     .admin__logo {
         position: relative;

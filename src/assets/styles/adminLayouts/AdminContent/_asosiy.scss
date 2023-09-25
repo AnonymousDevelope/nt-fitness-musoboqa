@@ -1,6 +1,8 @@
 .asosiy__dashboard {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    left: 345px;
+    // display: flex;
+    // justify-content: space-between;
 }
 
 .dashboard {
@@ -50,11 +52,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-        li{
+
+        li {
             display: flex;
             align-items: center;
-            div{
-                h3{
+
+            div {
+                h3 {
                     color: var(--color-gray-3, #A098AE);
                     font-family: Poppins;
                     font-size: 18px;
@@ -62,7 +66,8 @@
                     font-weight: 400;
                     line-height: normal;
                 }
-                h1{
+
+                h1 {
                     color: var(--color-text, #303972);
                     font-family: Poppins;
                     font-size: 36px;
@@ -72,8 +77,126 @@
                 }
             }
         }
-        li:first-child >div{
-          margin-left: 16px;  
+
+        li:first-child>div {
+            margin-left: 16px;
+        }
+    }
+}
+
+.admin__info {
+    width: 1080px;
+    height: 725px;
+    border-radius: 20px;
+    background: var(--color-white, #FFF);
+    padding: 32px;
+    margin-top: 36px;
+
+    .info__title {
+        color: var(--color-text, #303972);
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 24px;
+        
+    }
+
+    .ustozlar__table {
+        tr {
+            display: flex;
+            align-items: center;
+            padding-top: 28px;
+            padding-bottom: 28px;
+
+            td:nth-child(1) {
+                width: 48px;
+                height: 48px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            td:nth-child(2) {
+                color: var(--color-text, #303972);
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                // margin-left: 24px;
+                width: 258px;
+                padding-left: 24px;
+            }
+
+            td:nth-child(3) {
+                color: var(--color-purple, #4D44B5);
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                width: 258px;
+            }
+
+            td:nth-child(4) {
+                width: 48px;
+                height: 48px;
+                border-radius: 40px;
+                background: var(--color-orange, #FB7D5B);
+                padding: 12px;
+            }
+
+            td:nth-child(5) {
+                padding-left: 16px;
+                width: 140px;
+
+                p {
+                    color: var(--color-gray-3, #A098AE);
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 0;
+                }
+
+                span {
+                    color: #303972;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+
+            td:nth-child(6) {
+                display: flex;
+                width: 125px;
+                height: 30px;
+                padding: 16px 43px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 40px;
+                background: var(--iris-100, #5D5FEF);
+                box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+                margin-right: 115px;
+                color: var(--color-yellow, #FCC43E);
+                text-align: right;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            td :nth-child(7) {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }

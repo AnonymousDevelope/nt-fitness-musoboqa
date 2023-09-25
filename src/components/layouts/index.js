@@ -1,5 +1,5 @@
 import Header from "./header";
 import Footer from "./footer";
 import Loader from "./loader";
-
-export { Header, Footer, Loader };
+import Menu from './menu'
+export { Header, Footer, Loader, Menu };

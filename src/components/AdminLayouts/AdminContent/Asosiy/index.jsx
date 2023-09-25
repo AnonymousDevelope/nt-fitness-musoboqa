@@ -1,6 +1,6 @@
 import React from 'react'
-import { SearchIcon } from '../../../../assets/react-icons'
-import { gantelIcon, jihozlarIcon, mijozlarIcon, ustozlarIcon } from '../../../../assets/images/svg'
+import { PaginationLeft, PaginationRight, SearchIcon, UchNuqta, UserIcon } from '../../../../assets/react-icons'
+import { profilePicture, gantelIcon, jihozlarIcon, mijozlarIcon, ustozlarIcon } from '../../../../assets/images/svg'
 
 const index = () => {
   return (
@@ -43,9 +43,109 @@ const index = () => {
             </div>
           </li>
         </ul>
-      </div>
-      <div className='admin__info'>
 
+
+        <div className='admin__info'>
+          <h1 className='info__title'>Ustozlar</h1>
+          <table className='ustozlar__table'>
+            <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Asilbek Abudullayev</td>
+              <td>ID 123456789</td>
+              <td className='user__iconcha'>
+                <UserIcon />
+              </td>
+              <td>
+                <p>Toifa</p>
+                <span>||</span>
+              </td>
+              <td>
+                Juft
+              </td>
+              <td>
+                <UchNuqta />
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Asilbek Abudullayev</td>
+              <td>ID 123456789</td>
+              <td className='user__iconcha'>
+                <UserIcon />
+              </td>
+              <td>
+                <p>Toifa</p>
+                <span>||</span>
+              </td>
+              <td>
+                Juft
+              </td>
+              <td>
+                <UchNuqta />
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Asilbek Abudullayev</td>
+              <td>ID 123456789</td>
+              <td className='user__iconcha'>
+                <UserIcon />
+              </td>
+              <td>
+                <p>Toifa</p>
+                <span>||</span>
+              </td>
+              <td>
+                Juft
+              </td>
+              <td>
+                <UchNuqta />
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Asilbek Abudullayev</td>
+              <td>ID 123456789</td>
+              <td className='user__iconcha'>
+                <UserIcon />
+              </td>
+              <td>
+                <p>Toifa</p>
+                <span>||</span>
+              </td>
+              <td>
+                Juft
+              </td>
+              <td>
+                <UchNuqta />
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Asilbek Abudullayev</td>
+              <td>ID 123456789</td>
+              <td className='user__iconcha'>
+                <UserIcon />
+              </td>
+              <td>
+                <p>Toifa</p>
+                <span>||</span>
+              </td>
+              <td>
+                Juft
+              </td>
+              <td>
+                <UchNuqta />
+              </td>
+            </tr>
+          </table>
+          <div className=''>
+            <h4> 1-5 dan  18 ta</h4>
+            <div>
+              <PaginationLeft />
+              <div></div>
+              <div></div>
+              <div></div>
+              <PaginationRight />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

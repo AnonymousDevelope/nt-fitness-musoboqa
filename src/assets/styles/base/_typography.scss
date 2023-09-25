@@ -1,7 +1,25 @@
+// body {
+  // fonts
+// fonts Poppins all size 
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
   // fonts
+  overflow-x: hidden;
+  *{
+    font-family: monospace;
+  }
 }
 
 a {
   text-decoration: none;
 }
+// 
+<<<<<<< HEAD
+=======
+.column{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+>>>>>>> ea9f5fe9f44f29e589faf11e38b407bd0106c87b

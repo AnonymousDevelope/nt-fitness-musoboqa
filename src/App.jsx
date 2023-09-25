@@ -1,14 +1,11 @@
-import Routes from "./routes";
-import { lazy, Suspense } from "react";
-import { Loader } from "./components/layouts";
+import { Suspense } from "react";
+import { Loader, Menu } from "./components/layouts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Asosiy, Jihozlar, Mahsulotlar, Mijozlar, SavolJavob, Sitatistika, Ustozlar } from "./components/AdminLayouts/AdminContent";
+import { Admin, Error, Login, User } from "./pages";
 
 const App = () => {
-  const User = lazy(() => import("./pages/User"));
-  const Admin = lazy(() => import("./pages/Admin"));
-  const Login = lazy(() => import("./pages/Login"));
-  const Error = lazy(() => import("./pages/Error"));
+
   // const Verify = lazy(() => import("./pages/VerifyCode"));
   // const ResendCode = lazy(() => import("./pages/ResendCode"));
   // const Registration = lazy(() => import("./pages/Registration"));
@@ -25,8 +22,14 @@ const App = () => {
       element: <Admin />,
       children: [
         {
+          path: "",
+          element: <Asosiy />,
+        
+        },   
+        {
           path: "asosiy",
           element: <Asosiy />,
+        
         },
         {
           path: "ustozlar",
@@ -35,19 +38,19 @@ const App = () => {
         {
           path: "mijozlar",
           element: <Mijozlar />,
-        }, 
+        },
         {
           path: "jihozlar",
           element: <Jihozlar />,
-        },  
+        },
         {
           path: "maxsulotlar",
           element: <Mahsulotlar />,
-        }, 
+        },
         {
           path: "savol-javob",
           element: <SavolJavob />,
-        }, 
+        },
         {
           path: "statistika",
           element: <Sitatistika />,
@@ -58,14 +61,10 @@ const App = () => {
       path: "/user",
       element: <User />,
       children: [
-        //     {
-        //       path: "/",
-        //       index 
-        //       element: <page />,
-        //     },      //     {
-        //       path: "/nimadir",
-        //       element: <page />,
-        //     },
+        {
+          path: "menu",
+          element: <Menu />,
+        },
       ]
     },
     {
@@ -73,6 +72,13 @@ const App = () => {
       element: <Error />,
     },
 
+    // }
+    // {
+    //   path: "/",
+    //   element: <Home />,
+    // },
+    // ],
+    // },   
     // {
     //   path: "/admin",
     //   element: <Admin />,
@@ -82,6 +88,11 @@ const App = () => {
     //       element: <Admin />,
     //     },
     //   ],
+    // },
+
+    // {
+    //   path: "*",
+    //   element: <Error />,
     // },
 
     // {

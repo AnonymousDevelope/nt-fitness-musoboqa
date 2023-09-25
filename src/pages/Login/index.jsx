@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Logo } from "../../assets/images/png";
-import { Circle, Information, Ruka, SmsIcon } from "../../assets/react-icons";
+import {  Circle, Information, Ruka, SmsIcon } from "../../assets/react-icons";
 const index = memo(() => {
   return (
     <section className="login">
@@ -46,7 +46,8 @@ const index = memo(() => {
         }
       </div>
     </section>
-  );
-});
+
+
+)});
 
 export default index;
