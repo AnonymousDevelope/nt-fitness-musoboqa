@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 // import { MenuItem } from '../../../assets/images/svg';
 
 function Index() {
-<<<<<<< HEAD
   // const [currentIndex, setCurrentIndex] = useState(-1);
   // const Active = (idx) =>{
   //   setCurrentIndex(idx);
@@ -13,15 +12,6 @@ function Index() {
     <>
     <h1>salom</h1>
       {/* <div className="sidebar-menu">
-=======
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const Active = (idx) =>{
-    setCurrentIndex(idx);
-  }
-  return (
-    <>
-      <div className="sidebar-menu col-xl-3">
->>>>>>> ea9f5fe9f44f29e589faf11e38b407bd0106c87b
         <div className="logo-menu brand">
           <img src={Logo} alt="" />
         </div>
