@@ -219,9 +219,25 @@ const Activity = () => (
     </svg>
 
   
-  )
+  );
+  const Qungiroq = ({className,className2}) => {
+    return (
+        <svg className={className} xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29" fill="none">
+            <ellipse className={className2}  cx="4" cy="3.88229" rx="4" ry="3.49264" fill="#4D44B5" />
+
+            <g clip-path="url(#clip0_16_39)">
+                <path d="M25.3677 17.4186V9.49784C25.3677 4.98751 21.1655 1.31836 16 1.31836C10.8345 1.31836 6.63232 4.98751 6.63232 9.49784V17.4192C4.96704 17.8407 3.73828 19.1783 3.73828 20.8225C3.73828 22.7445 5.5293 24.3083 7.73096 24.3083H11.377V24.3497C11.377 26.5756 13.4507 28.3863 16 28.3863C18.5493 28.3863 20.6231 26.5756 20.6231 24.3497V24.3083H24.2691C26.4707 24.3083 28.2617 22.7445 28.2617 20.7534C28.2617 19.1663 27.033 17.8384 25.3677 17.4186ZM9.63232 9.49784C9.63232 6.43198 12.4888 3.93784 16 3.93784C19.5112 3.93784 22.3677 6.43198 22.3677 9.49784V17.2676H9.63232V9.49784ZM17.6231 24.3497C17.6231 25.1312 16.895 25.7668 16 25.7668C15.105 25.7668 14.377 25.1312 14.377 24.3497V24.3083H17.623V24.3497H17.6231ZM24.269 21.6888H7.73096C7.1836 21.6888 6.73828 21.3 6.73828 20.7534C6.73828 20.2759 7.18359 19.8871 7.73096 19.8871H24.2691C24.8164 19.8871 25.2617 20.2759 25.2617 20.8225C25.2617 21.3 24.8164 21.6888 24.269 21.6888Z" fill="#A098AE" />
+            </g>
+            <defs>
+                <clipPath id="clip0_16_39">
+                    <rect width="32" height="27.9411" fill="white" transform="translate(0 0.881836)" />
+                </clipPath>
+            </defs>
+        </svg>
+    )
+};
 export {
-    Circle, Ruka, Information, SmsIcon, HomeIcon,
+    Circle, Qungiroq, Ruka, Information, SmsIcon, HomeIcon,
     UstozlarIcon, MijozlarIcon, SavolJavobIcon, UchNuqta,
     StatistikaIcon, JihozVsMaxsulotlarIcon, SearchIcon,
      UserIcon,PaginationLeft,PaginationRight,
