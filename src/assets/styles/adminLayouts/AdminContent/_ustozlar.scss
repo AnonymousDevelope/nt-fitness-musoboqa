@@ -1,0 +1,124 @@
+.ustozlar__card {
+    width: 1566px;
+    position: relative;
+    left: 310px;
+    background: var(--color-background, #D8EDF7);
+}
+
+.ustozlar__header {
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 48px 15px 50px;
+
+    .header__subtitle {
+        color: var(--color-text, #303972);
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .header__right {
+        display: flex;
+        align-items: center;
+
+        .qunSet {
+            width: 60px;
+            height: 60px;
+            padding: 15px;
+            border-radius: 40px;
+            background: var(--color-white, #FFF);
+            box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+            margin-right: 20px;
+        }
+
+        .header__title {
+            h5 {
+                color: var(--color-text, #303972);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            span {
+                color: var(--color-gray-3, #A098AE);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .user__img {
+            width: 60px;
+            height: 60px;
+            border-radius: 40px;
+            background: var(--color-gray-2, #C1BBEB);
+            margin-left: 11px;
+        }
+    }
+}
+
+.search__plus {
+    display: flex;
+    width: 1250px;
+    padding: 15px 55px 58px 50px;
+    align-items: center;
+    justify-content: space-between;
+
+    .search__label {
+        display: flex;
+        width: 350px;
+        height: 60px;
+        padding: 2px 32px 2px 0px;
+        align-items: center;
+        border-radius: 40px;
+        background: var(--color-white, #FFF);
+        padding: 23px 32px;
+
+        .search__input {
+            border: none;
+            outline: none;
+            margin-left: 16px;
+        }
+    }
+
+    .ustoz__qushish {
+        display: flex;
+        width: 207px;
+        font-size: 35px;
+        color: #FFF;
+        border: none;
+        height: 60px;
+        padding: 16px 43px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 40px;
+        background: var(--color-purple, #4D44B5);
+        box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+    }
+}
+
+.ustozlar__list {
+    width: 1516px;
+    height: 1120px;
+    padding: 0 33px 24px 38px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 53px;
+    row-gap: 36px;
+    .ustozCard{
+        // grid-column-start: 1;
+        // grid-column-end: 3;
+        // grid-row-start: 1;
+        // grid-row-end: 3;
+    }
+}

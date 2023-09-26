@@ -1,0 +1,88 @@
+.ustoz__card {
+    width: 338px;
+    height: 352px;
+    border-radius: 20px;
+    background: var(--color-white, #FFF);
+    padding: 16px 35px 43px 19px;
+
+    .ustoz__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .edit {
+        position: absolute;
+        top: 274px;
+        left: 250px;
+        cursor: pointer;
+    }
+
+    .deleti {
+        position: absolute;
+        top: 274px;
+        left: 290px;
+        cursor: pointer;
+    }
+
+    .ustoz__title {
+        color: var(--color-text, #303972);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .ustoz__Id {
+        color: var(--color-purple, #4D44B5);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .ustoz__malumot {
+        margin-top: 33px;
+        display: flex;
+        align-items: center;
+        .icon__user {
+            width: 35.326px;
+            height: 34px;
+            padding-top: 2px;
+            padding-left: 8px;
+            border-radius: 40px;
+            background: var(--color-gray-3, #A098AE);
+            
+        }
+
+        .Toifa {
+            padding-left: 10px;
+            p {
+                color: var(--color-gray-3, #A098AE);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+            }
+
+            span {
+                color: var(--color-text, #303972);
+                text-shadow: 0px 2.512089252471924px 2.512089252471924px rgba(0, 0, 0, 0.25);
+                font-family: Poppins;
+                font-size: 11.304px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        .kalendar{
+            margin-left: 87px;
+        }
+    }
+}
