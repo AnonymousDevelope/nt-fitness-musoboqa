@@ -1,10 +1,12 @@
 import React from 'react'
 import { Checkout,Bell,Settings } from '../../../assets/react-icons'
 import { Profile } from '../../../assets/images/png'
+import { useSelector } from 'react-redux'
 function index() {
+    const title = useSelector(state => state.title); 
     return (
         <header>
-            <div className='user-nick'>Mijoz</div>
+            <div className='user-nick'>{title}</div>
             <div className="user-instruction">
                 <div className="checkout">
                     <Checkout />

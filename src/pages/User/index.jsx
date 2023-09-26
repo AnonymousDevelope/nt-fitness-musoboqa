@@ -5,7 +5,6 @@ import { UserHeader } from "../../components/layouts";
 const index = () => {
   return (
     <>
-
       <section className="User">
         <div className="row">
           <UserSidebar />
