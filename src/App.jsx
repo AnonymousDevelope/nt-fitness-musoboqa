@@ -1,9 +1,9 @@
 import { Suspense } from "react";
-import { Loader, Menu } from "./components/layouts";
+import { Loader } from "./components/layouts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Asosiy, Jihozlar, Mahsulotlar, Mijozlar, SavolJavob, Sitatistika, Ustozlar } from "./components/AdminLayouts/AdminContent";
+import {Men} from "./components/UserLayout/UserContent"
 import { Admin, Error, Login, User } from "./pages";
-
 const App = () => {
 
   // const Verify = lazy(() => import("./pages/VerifyCode"));
@@ -62,8 +62,9 @@ const App = () => {
       element: <User />,
       children: [
         {
-          path: "menu",
-          element: <Menu />,
+          path: "men",
+          element:<Men /> ,
+          name:"men",
         },
       ]
     },
