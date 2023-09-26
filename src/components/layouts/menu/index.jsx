@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 // import { MenuItem } from '../../../assets/images/svg';
 
 function Index() {
-<<<<<<< HEAD
   // const [currentIndex, setCurrentIndex] = useState(-1);
   // const Active = (idx) =>{
   //   setCurrentIndex(idx);

@@ -37,7 +37,6 @@ const index = () => {
           <StatistikaIcon />
           <span>Statistika</span>
         </NavLink>
-
       </ul>
     </section>
   )
