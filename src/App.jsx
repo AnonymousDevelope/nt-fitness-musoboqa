@@ -62,7 +62,7 @@ const App = () => {
       element: <User />,
       children: [
         {
-          path: "men",
+          path: "",
           element:<Men /> ,
         },
         {

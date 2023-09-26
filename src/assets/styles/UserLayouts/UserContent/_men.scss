@@ -1,10 +1,12 @@
 .sidebar-left {
     position: relative;
 }
+
 .sidebar-main {
     background-color: $color-background;
     display: flex;
     flex-direction: column;
+
     padding: {
         top: 40px;
         left: 40px !important;
@@ -109,7 +111,6 @@
         .card {
             width: 100%;
             background-color: #fff;
-            height: auto;
             padding: 40px 17px;
 
             .col-md-4 {
@@ -165,6 +166,7 @@
 
             .postal {
                 text-align: center;
+
                 h3 {
                     @include defaultTextStyle(24px)
                 }
@@ -176,18 +178,29 @@
             }
 
             .specialist {
-                @include defaultTextStyle(26px,400,$color:$color-gray-3)
+                @include defaultTextStyle(26px, 400, $color: $color-gray-3)
             }
-            .icon{
+
+            .icon {
                 width: 60px;
                 height: 60px;
                 padding: 4px;
                 background-color: $color-gray-3;
-                display: flex;  
+                display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
             }
+
+            .empty_rect {
+                width: 100%;
+                height: 488px;
+                border-radius: 15px;
+                margin-top: 72px;
+                border: 1px solid var(--color-gray-2, #C1BBEB);
+                background: var(--color-gray, #F5F5F5);
+            }
         }
     }
+
 }

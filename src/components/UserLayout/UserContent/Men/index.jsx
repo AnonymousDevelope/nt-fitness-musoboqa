@@ -1,6 +1,6 @@
 import React from 'react'
-import { Checkout,Bell,Activity,Settings,Calendar,Phone } from '../../../../assets/react-icons'
-import { Ustoz,Profile } from '../../../../assets/images/png'
+import { Checkout, Bell, Activity, Settings, Calendar, Phone, UserIcon, JihozVsMaxsulotlarIcon } from '../../../../assets/react-icons'
+import { Ustoz, Profile } from '../../../../assets/images/png'
 function index() {
   return (
     <section className='col-xl-9 float-end sidebar-main'>
@@ -78,7 +78,7 @@ function index() {
                   <div className="col-xl">
                     <div className="row">
                       <div className="col-md-4 icon">
-                        {/* <User /> */}
+                        <UserIcon />
                       </div>
                       <div className="col-md-8 column">
                         <span className='specialist'>Ustoz</span>
@@ -113,12 +113,13 @@ function index() {
             </div>
           </div>
           <div className="row">
-            <div className="card">
-
+            <div className="empty_rect">
             </div>
           </div>
+
         </div>
       </main>
+
     </section>
   )
 }
