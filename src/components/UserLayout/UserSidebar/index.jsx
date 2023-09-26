@@ -12,7 +12,7 @@ function Index() {
                     </div>
                     <div className="menu-item w-100">
                         <ul className="nav-menu ps-0 w-100">
-                            <NavLink className="nav-link" to="">
+                            <NavLink className="nav-link" to="men">
                                 <UserIcon />
                                 <span>Men</span>
                             </NavLink>

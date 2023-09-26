@@ -66,6 +66,10 @@ const App = () => {
           element:<Men /> ,
         },
         {
+          path:"men",
+          element:<Men />,
+        },
+        {
           path:"ustozlar",
           element:<UstozlarUser/>
         },
