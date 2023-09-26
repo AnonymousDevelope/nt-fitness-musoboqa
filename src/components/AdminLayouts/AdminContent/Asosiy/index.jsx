@@ -1,8 +1,12 @@
 import React from 'react'
-import { PaginationLeft, PaginationRight, SearchIcon, UchNuqta, UserIcon } from '../../../../assets/react-icons'
+import { SavolJavobIcon, SearchIcon, UchNuqta, UserIcon } from '../../../../assets/react-icons'
 import { profilePicture, gantelIcon, jihozlarIcon, mijozlarIcon, ustozlarIcon } from '../../../../assets/images/svg'
+import { Pagination } from '../../../fields'
+import UserInfo from './UserInfo'
+import { useState } from 'react'
 
 const index = () => {
+  const [smsDisplay, setSmsDisplay] = useState(false);
   return (
     <section className='asosiy__dashboard'>
       <div className='dashboard'>
@@ -12,6 +16,7 @@ const index = () => {
             <SearchIcon />
             <input className='search__input' type="search" id="search" placeholder='Izlash' />
           </label>
+          <SavolJavobIcon onClick={() => setSmsDisplay(true)} className="sms__pege" />
         </div>
         <ul className='dashboard__info'>
           <li>
@@ -135,18 +140,98 @@ const index = () => {
               </td>
             </tr>
           </table>
-          <div className=''>
-            <h4> 1-5 dan  18 ta</h4>
+          <Pagination className='ustoz__pagination' children=" 1-5 dan  18 ta" item1={1} item2={2} item3={3} />
+        </div>
+
+
+
+
+
+        <div className='mijozlar__info'>
+          <h1 className='info__title'>Mijozlar</h1>
+          <table className='mijozlar__table'>
             <div>
-              <PaginationLeft />
-              <div></div>
-              <div></div>
-              <div></div>
-              <PaginationRight />
+              <span>Mijoz</span>
+              <span>Ustoz</span>
+              <span>Xizmat</span>
+              <span>kuni</span>
             </div>
-          </div>
+            <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>     <tr>
+              <td style={{ backgroundImage: `url(${profilePicture})` }}></td>
+              <td>Davirov  Akbar</td>
+              <td>Shavkatjon Salimboyev</td>
+              <td>
+                300
+              </td>
+              <td>
+                Du Cho Ju
+              </td>
+            </tr>
+          </table>
+          <Pagination className='ustoz__pagination' children=" 1-7 dan  232 ta" item1={1} item2={2} item3={3} />
         </div>
       </div>
+      <UserInfo display={smsDisplay} setSmsDisplay={setSmsDisplay} />
     </section>
   )
 }

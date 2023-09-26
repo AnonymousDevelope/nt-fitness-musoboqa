@@ -4,7 +4,7 @@ import AdminSidebar from "../../components/AdminLayouts/AdminSidebar";
 
 const index = () => {
     return (
-        <section style={{ display: 'flex' }}>
+        <section style={{ display: 'flex' ,justifyContent:"space-between" }}>
             <AdminSidebar />
             <Outlet />
         </section>
