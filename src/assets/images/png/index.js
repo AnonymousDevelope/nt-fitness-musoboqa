@@ -1,5 +1,5 @@
 import Logo from "./logo.png";
 import Ustoz from "./ustoz.png";
-import Profile from './src/Profile.png'
+import Profile from './Profile.png'
 
-export { Logo, Profile,Ustoz, }
+export { Logo, Profile,Ustoz }
