@@ -1,8 +1,14 @@
 import React from 'react'
+import { UserHeader } from '../../../layouts'
 
 function index() {
   return (
-    <div>index</div>
+    <>
+      <UserHeader titlename='Jihozlar'/>
+      <main>
+        
+      </main>
+    </>
   )
 }
 

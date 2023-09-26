@@ -9,7 +9,6 @@ const index = () => {
         <div className="row">
           <UserSidebar />
           <section className='col-xl-9 float-end sidebar-main'>
-            <UserHeader />
             <Outlet />
           </section>
         </div>
