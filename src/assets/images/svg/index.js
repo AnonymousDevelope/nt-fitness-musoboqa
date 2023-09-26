@@ -3,4 +3,6 @@ import jihozlarIcon from "./jihozlarIcon.svg";
 import mijozlarIcon from "./mijozlarIcon.svg";
 import ustozlarIcon from "./ustozlarIcon.svg";
 import profilePicture from "./profilePicture.svg";
-export {profilePicture, gantelIcon, jihozlarIcon, mijozlarIcon, ustozlarIcon } 
+import userImg from "./userImg.svg";
+import chiqish from "./chiqish.svg";
+export {profilePicture, chiqish, userImg, gantelIcon, jihozlarIcon, mijozlarIcon, ustozlarIcon } 
