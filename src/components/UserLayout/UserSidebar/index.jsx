@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Logo } from '../../../assets/images/png';
 import { NavLink } from 'react-router-dom';
-import { UserIcon, Calendar } from '../../../assets/react-icons';
-
+import { UserIcon, Calendar, UstozlarIcon, JihozVsMaxsulotlarIcon, Chat, Activity } from '../../../assets/react-icons';
 function Index() {
     return (
         <>
@@ -13,27 +12,34 @@ function Index() {
                     </div>
                     <div className="menu-item w-100">
                         <ul className="nav-menu ps-0 w-100">
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="men">Men</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="buyurtmalarim">Buyurtmalarim</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="ustozlar">Ustozlar</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="jihozlar">Jihozlar</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="maxsulotlar">Maxsulotlar</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="savol-javob">Savol javob</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="statistika">Statistika</NavLink>
-                            </li>
+                            <NavLink className="nav-link" to="men">
+                                <UserIcon />
+                                <span>Men</span>
+                            </NavLink>
+                            <NavLink className="nav-link" to="buyurtmalarim">
+                                <Calendar />
+                                <span>Buyurtmalarim</span>
+                            </NavLink>
+                            <NavLink className="nav-link" to="ustozlar">
+                                <UstozlarIcon />
+                                <span>Ustozlar</span>
+                            </NavLink>
+                            <NavLink className="nav-link" to="jihozlar">
+                                <JihozVsMaxsulotlarIcon />
+                                <span>Jihozlar</span>
+                            </NavLink>
+                            <NavLink className="nav-link" to="maxsulotlar">
+                                <Calendar />
+                                <span>Mahsulotlar</span>
+                            </NavLink>
+                            <NavLink className="nav-link" to="savol-javob">
+                                <Chat />
+                                <span>Savol Javob</span>
+                            </NavLink>
+                            <NavLink className="nav-link" to="statistika">
+                                <Activity />
+                                <span>Statistika</span>
+                            </NavLink>
                         </ul>
                     </div>
                 </div>
