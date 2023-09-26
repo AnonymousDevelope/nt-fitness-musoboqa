@@ -1,0 +1,193 @@
+.sidebar-left {
+    position: relative;
+}
+.sidebar-main {
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    padding: {
+        top: 40px;
+        left: 40px !important;
+        right: 22px !important;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .user-nick {
+            @include defaultTextStyle(36px, 900)
+        }
+
+        .user-instruction {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+            .checkout,
+            .bell,
+            .settings {
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* Shadow */
+                box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+            }
+
+            .my_account {
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+
+                .name {
+                    color: #101828;
+                    font-family: Abhaya Libre;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+                    /* 23.75px */
+                }
+
+                .another {
+                    color: #667085;
+                    font-family: Abhaya Libre;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 175%;
+                    /* 24.5px */
+                }
+
+                .profile {
+                    margin: 0;
+                    padding: 0;
+
+                    img {
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        flex: 1;
+
+        margin: {
+            top: 46px;
+        }
+
+        ;
+
+        .main-title {
+            width: 100%;
+            height: 83px;
+            flex-shrink: 0;
+            border-radius: 20px 20px 0px 0px;
+            background: $color-purple;
+            display: flex;
+            align-items: center;
+
+            padding: {
+                left: 59.45px;
+            }
+
+            h3 {
+                @include defaultTextStyle(28px, $color: #fff)
+            }
+        }
+
+        .card {
+            width: 100%;
+            background-color: #fff;
+            height: auto;
+            padding: 40px 17px;
+
+            .col-md-4 {
+                .user-profile {
+                    flex-shrink: 0;
+
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .column {
+                    align-items: end;
+                    gap: 20px;
+
+                    .date {
+                        @include defaultTextStyle(20px)
+                    }
+
+                    .personal-id {
+                        @include defaultTextStyle(25px, $color: $color-purple)
+                    }
+                }
+            }
+
+            .col-md-8 {
+                .user-info {
+                    width: 100%;
+                    height: auto;
+                    flex-shrink: 0;
+                    border-radius: 20px;
+                    border: rgba(0, 0, 0, 0.03) solid 2px;
+                    background: $color-gray;
+                    padding: 28px 12px 28px 28px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    h3.name {
+                        @include defaultTextStyle(50px, 900)
+                    }
+                }
+            }
+
+            .personal-age {
+                @include defaultTextStyle(50px)
+            }
+
+            .gender {
+                @include defaultTextStyle(34px)
+            }
+
+            .postal {
+                text-align: center;
+                h3 {
+                    @include defaultTextStyle(24px)
+                }
+            }
+
+            .name-techer {
+                @include defaultTextStyle(18px, 400);
+                text-shadow: 0px 2.512089252471924px 2.512089252471924px rgba(0, 0, 0, 0.25);
+            }
+
+            .specialist {
+                @include defaultTextStyle(26px,400,$color:$color-gray-3)
+            }
+            .icon{
+                width: 60px;
+                height: 60px;
+                padding: 4px;
+                background-color: $color-gray-3;
+                display: flex;  
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+            }
+        }
+    }
+}
