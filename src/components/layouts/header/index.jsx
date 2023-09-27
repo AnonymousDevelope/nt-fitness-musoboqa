@@ -1,11 +1,9 @@
-import { memo } from "react";
+import React from 'react'
 
-const index = memo(() => {
+function index() {
   return (
-    <>
-      <h1>Header</h1>
-    </>
-  );
-});
+    <div>index</div>
+  )
+}
 
-export default index;
+export default index

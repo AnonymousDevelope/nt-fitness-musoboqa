@@ -3,7 +3,7 @@ import { PaginationLeft, PaginationRight } from '../../../assets/react-icons'
 
 const index = ({className,children,item1,item2,item3,}) => {
     return (
-        <div className={className}>
+        <div className={`${className} ustoz__pagination`}>
             <h4 className='pagination__soni'> {children}</h4>
             <div className='card__pagination'>
                 <PaginationLeft />
