@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Loader } from "./components/layouts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Asosiy, Jihozlar, Mahsulotlar, Mijozlar, SavolJavob, Sitatistika, Ustozlar } from "./components/AdminLayouts/AdminContent";
-import {Men} from "./components/UserLayout/UserContent"
+import {Men,BuyurtmalarimUser,JihozlarUser,MahsulotlarUser,SavoljavobUser,StatistikaUser,UstozlarUser} from "./components/UserLayout/UserContent"
 import { Admin, Error, Login, User } from "./pages";
 const App = () => {
 
@@ -62,10 +62,37 @@ const App = () => {
       element: <User />,
       children: [
         {
-          path: "men",
+          path: "",
           element:<Men /> ,
-          name:"men",
         },
+        {
+          path:"men",
+          element:<Men />,
+        },
+        {
+          path:"ustozlar",
+          element:<UstozlarUser/>
+        },
+        {
+          path:"buyurtmalarim",
+          element:<BuyurtmalarimUser />
+        },
+        {
+          path:"jihozlar",
+          element:<JihozlarUser />
+        },
+        {
+          path:'savol-javob',
+          element:<SavoljavobUser />,
+        },
+        {
+          path:"Statistika",
+          element:<StatistikaUser />
+        },
+        {
+          path:"maxsulotlar",
+          element:<MahsulotlarUser />
+        }
       ]
     },
     {

@@ -1,39 +1,12 @@
 import React from 'react'
-import { Checkout,Bell,Activity,Settings,Calendar,Phone } from '../../../../assets/react-icons'
-import { Ustoz,Profile } from '../../../../assets/images/png'
+import { Checkout, Bell, Activity, Settings, Calendar, Phone, UserIcon, JihozVsMaxsulotlarIcon } from '../../../../assets/react-icons'
+import { Ustoz, Profile } from '../../../../assets/images/png'
+import { UserHeader } from '../../../layouts'
 function index() {
   return (
-    <section className='col-xl-9 float-end sidebar-main'>
-      <header>
-        <div className='user-nick'>Mijoz</div>
-        <div className="user-instruction">
-          <div className="checkout">
-            <Checkout />
-          </div>
-          <div className="bell">
-            <Bell />
-          </div>
-          <div className="settings">
-            <Settings />
-          </div>
-          <div className="my_account">
-            <div className="row align-items-end">
-              <div className="col-7 row">
-                <div className="col-12 name">
-                  John Doe
-                </div>
-                <div className="col-12 another">
-                  +9989360833334
-                </div>
-              </div>
-              <div className="col-4 profile">
-                <img src={Profile} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main>
+    <>
+    <UserHeader/>
+      <main className='men'>
         <div className="main-title">
           <h3>Mijoz Ma'lumotlari</h3>
         </div>
@@ -78,7 +51,7 @@ function index() {
                   <div className="col-xl">
                     <div className="row">
                       <div className="col-md-4 icon">
-                        {/* <User /> */}
+                        <UserIcon />
                       </div>
                       <div className="col-md-8 column">
                         <span className='specialist'>Ustoz</span>
@@ -113,13 +86,13 @@ function index() {
             </div>
           </div>
           <div className="row">
-            <div className="card">
-
+            <div className="empty_rect">
             </div>
           </div>
+
         </div>
       </main>
-    </section>
+    </>
   )
 }
 

@@ -1,0 +1,56 @@
+.product__card {
+    width: 270px !important;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: $color-gray-2;
+    padding: {
+        left: 11px;
+        right: 11px;
+        top: 11px;
+        bottom: 16px;
+    }
+
+    .column {
+        align-items: center;
+        gap: 10px;
+
+        &:nth-child(even) {
+            align-items: flex-end;
+        }
+
+        &:nth-child(odd) {
+            align-items: flex-start;
+        }
+
+        .product_info {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+
+            .product_name {
+                @include defaultTextStyle(18px, 600);
+            }
+
+            .product_company {
+                @include defaultTextStyle(18px, 600, $color: #C11030);
+                text-align: end;
+            }
+
+            .product_purpose {
+                @include defaultTextStyle(18px, 600, $color: #5C63A3);
+            }
+
+            .product_price {
+                @include defaultTextStyle(18px, 600, $color: #1128FA);
+                text-align: end;
+            }
+        }
+    }
+    .product__delete{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
