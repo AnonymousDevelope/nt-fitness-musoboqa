@@ -2,11 +2,12 @@ import React from 'react'
 import { Calendar, Phone, UserIcon} from '../../../../assets/react-icons'
 import { Ustoz } from '../../../../assets/images/png'
 import { UserHeader } from '../../../layouts'
+import { MijozCard } from '../../../fields'
 function index() {
   return (
     <>
     <UserHeader/>
-      <main className='men'>
+      {/* <main className='men'>
         <div className="main-title">
           <h3>Mijoz Ma'lumotlari</h3>
         </div>
@@ -91,7 +92,8 @@ function index() {
           </div>
 
         </div>
-      </main>
+      </main> */}
+      <MijozCard />
     </>
   )
 }
