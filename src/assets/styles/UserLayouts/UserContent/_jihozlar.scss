@@ -1,0 +1,152 @@
+main.jihozlar {
+    .card {
+        .jihozlar-image {
+            width: 559px;
+            height: 530px;
+            border-radius: 15px;
+        }
+
+        .jihozlar-info {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 20px;
+            border: rgba(0, 0, 0, 0.03) solid 2px;
+            background: $color-gray;
+            padding: 28px 12px 28px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .jihozlar__info_text {
+                margin: {
+                    left: 50px;
+                    top: 28px;
+                }
+
+                ;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .jihoz_name {
+                    @include defaultTextStyle(50px, 600)
+                }
+
+                .jihoz_purpose {
+                    @include defaultTextStyle(50px, 700);
+                }
+
+                .jihoz_company {
+                    @include defaultTextStyle(34px, 700, $color: var(--color-red, #C41F28));
+                }
+
+            }
+
+            .jihozlar__info_instruction {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                gap: 70px;
+
+                .jihoz_instruct {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    .icon {
+                        font-size: 25px;
+                        color: $color-gray;
+                    }
+
+                    .jihoz__instruct_title {
+                        @include defaultTextStyle(26px, 400, $color: $color-gray-3);
+                    }
+
+                    .jihoz__instruct_soni,
+                    .jihoz__instruct_kuni {
+                        @include defaultTextStyle(26.3px, 400, $color: $color-text);
+                        text-shadow: 0px 2.512089252471924px 2.512089252471924px rgba(0, 0, 0, 0.25);
+                    }
+
+                    .jihoz__instruct_narx {
+                        @include defaultTextStyle(26px, 600, $color: #FCC43E);
+                    }
+                }
+            }
+
+        }
+
+        .empty_rect {
+            padding: {
+                top: 41.83px;
+                left: 33.85px;
+                right: 33.85px;
+                bottom: 39.04px;
+            }
+
+            @include defaultTextStyle(35px, 700, $color: $color-gray-3);
+            line-height: calc(100% + 10px);
+        }
+
+        .amallar {
+            margin-top: 47px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+            justify-content: flex-end;
+
+            .savatga_qoshish {
+                cursor: pointer;
+                display: flex;
+                width: 271px;
+                height: 60px;
+                padding: 10px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+                border-radius: 40px;
+                border: 2px solid var(--color-purple, #4D44B5);
+                @include defaultTextStyle(18px, 400, $color: $color-purple);
+
+                &_text {
+                    @include defaultTextStyle(18px, 400, $color: $color-purple);
+                }
+            }
+
+            .sotib_olish {
+                cursor: pointer;
+                display: inline-flex;
+                height: 60px;
+                padding: 10px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+                outline: none;
+                border-radius: 40px;
+                background: var(--color-green, #4CBC9A);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                border: none;
+                @include defaultTextStyle(18px, 400, $color: #fff);
+
+
+                &_text {
+                    @include defaultTextStyle(18px, 400, $color: #fff);
+                }
+            }
+
+            .savatga_qoshish,
+            .sotib_olish {
+                transition: all 0.2s linear;
+                outline: none;
+
+                &:active {
+                    transform: scale(0.93);
+                }
+            }
+        }
+    }
+}
