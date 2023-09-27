@@ -1,7 +1,6 @@
 .ustozlar__card {
-    width: 1566px;
-    position: relative;
-    left: 310px;
+    // width: 1566px;
+    margin-left: 310px;
     background: var(--color-background, #D8EDF7);
 }
 
@@ -108,11 +107,10 @@
 }
 
 .ustozlar__list {
-    width: 1516px;
-    height: 1120px;
+
     padding: 0 33px 24px 38px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     column-gap: 53px;
     row-gap: 36px;
     .ustozCard{
@@ -121,4 +119,7 @@
         // grid-row-start: 1;
         // grid-row-end: 3;
     }
+}
+.ustozlar__pagination{
+    padding: 24px 52px 42px 63px;
 }
