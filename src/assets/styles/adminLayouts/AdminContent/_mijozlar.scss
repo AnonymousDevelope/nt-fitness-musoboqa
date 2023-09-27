@@ -1,3 +1,17 @@
-.mijozlar__card{
+.mijozlar__card {
     margin-left: 310px;
+    background: var(--color-background, #D8EDF7);
+
+    table {
+        tr {
+            display: flex;
+            align-items: center;
+
+            td:nth-child(1) {}
+
+            td:nth-child(2) {
+                padding: 20px 25px;
+            }
+        }
+    }
 }
