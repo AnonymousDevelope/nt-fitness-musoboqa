@@ -367,6 +367,6 @@ export {
   StatistikaIcon, JihozVsMaxsulotlarIcon, SearchIcon,
   UserIcon, PaginationLeft, PaginationRight,
   Phone, Calendar, Settings, Activity, Bell, Checkout,
-  Chat, Qungiroq,Trash
+  Chat, Qungiroq,Trash,Deleti,Edit,UserIconMini,Finance,
 }
 

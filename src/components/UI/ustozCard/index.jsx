@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { userImg } from "../../../assets/images/svg";
-import { Deleti, Edit, Kalendar, UserIconMini } from "../../../assets/react-icons";
+import { Deleti, Edit, Calendar, UserIconMini } from "../../../assets/react-icons";
 
 const index = memo(({className}) => {
   return (
@@ -16,7 +16,7 @@ const index = memo(({className}) => {
           <p>Toifa</p>
           <span>IV</span>
         </div>
-        <Kalendar className="kalendar"/>
+        <Calendar className="kalendar"/>
         <div className="Toifa">
           <p>kuni</p>
           <span>Se Pay Sha</span>

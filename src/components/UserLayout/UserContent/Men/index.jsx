@@ -1,6 +1,6 @@
 import React from 'react'
-import { Checkout, Bell, Activity, Settings, Calendar, Phone, UserIcon, JihozVsMaxsulotlarIcon } from '../../../../assets/react-icons'
-import { Ustoz, Profile } from '../../../../assets/images/png'
+import { Calendar, Phone, UserIcon} from '../../../../assets/react-icons'
+import { Ustoz } from '../../../../assets/images/png'
 import { UserHeader } from '../../../layouts'
 function index() {
   return (
