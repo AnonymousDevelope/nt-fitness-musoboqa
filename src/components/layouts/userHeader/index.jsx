@@ -3,7 +3,6 @@ import { Checkout,Bell,Settings } from '../../../assets/react-icons'
 import { Profile } from '../../../assets/images/png'
 import { useSelector } from 'react-redux'
 function index({titlename="Mijozlar"}) {
-    const title = useSelector(state => state.title); 
     return (
         <header>
             <div className='user-nick'>{titlename}</div>

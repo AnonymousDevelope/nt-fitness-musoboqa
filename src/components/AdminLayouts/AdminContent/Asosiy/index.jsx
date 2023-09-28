@@ -1,5 +1,5 @@
 import React from 'react'
-import { SavolJavobIcon, SearchIcon, UchNuqta, UserIcon } from '../../../../assets/react-icons'
+import { SavolJavobIcon, SearchIcon, UchNuqta, UserIconMini } from '../../../../assets/react-icons'
 import { profilePicture, gantelIcon, jihozlarIcon, mijozlarIcon, ustozlarIcon } from '../../../../assets/images/svg'
 import { Pagination } from '../../../fields'
 import UserInfo from './UserInfo'
@@ -58,7 +58,7 @@ const index = () => {
               <td>Asilbek Abudullayev</td>
               <td>ID 123456789</td>
               <td className='user__iconcha'>
-                <UserIcon />
+                <UserIconMini />
               </td>
               <td>
                 <p>Toifa</p>
@@ -75,7 +75,7 @@ const index = () => {
               <td>Asilbek Abudullayev</td>
               <td>ID 123456789</td>
               <td className='user__iconcha'>
-                <UserIcon />
+                <UserIconMini />
               </td>
               <td>
                 <p>Toifa</p>
@@ -92,7 +92,7 @@ const index = () => {
               <td>Asilbek Abudullayev</td>
               <td>ID 123456789</td>
               <td className='user__iconcha'>
-                <UserIcon />
+                <UserIconMini />
               </td>
               <td>
                 <p>Toifa</p>
@@ -109,7 +109,7 @@ const index = () => {
               <td>Asilbek Abudullayev</td>
               <td>ID 123456789</td>
               <td className='user__iconcha'>
-                <UserIcon />
+                <UserIconMini />
               </td>
               <td>
                 <p>Toifa</p>
@@ -126,7 +126,7 @@ const index = () => {
               <td>Asilbek Abudullayev</td>
               <td>ID 123456789</td>
               <td className='user__iconcha'>
-                <UserIcon />
+                <UserIconMini />
               </td>
               <td>
                 <p>Toifa</p>

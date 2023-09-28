@@ -8,7 +8,7 @@ const index = () => {
       <section className="User">
         <div className="row">
           <UserSidebar />
-          <section className='col-xl-9 float-end sidebar-main'>
+          <section className='float-end sidebar-main'>
             <Outlet />
           </section>
         </div>

@@ -5,8 +5,8 @@ import { UserIcon, Calendar, UstozlarIcon, JihozVsMaxsulotlarIcon, Chat, Activit
 function Index() {
     return (
         <>
-            <section className='sidebar-left col-xl-3 '>
-                <div className="sidebar-menu col-xl-3">
+            <section className='sidebar-left'>
+                <div className="sidebar-menu">
                     <div className="logo-menu brand">
                         <img src={Logo} alt="" />
                     </div>

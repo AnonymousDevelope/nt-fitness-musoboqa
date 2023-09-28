@@ -1,0 +1,87 @@
+.savol_javob_header_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 21.7px;
+
+    .savol_javob_header_logo {
+        width: 71px;
+        height: 71px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: var(--iris-80, #7879F1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .white-user {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+
+    .savol_javob_header_title_text {
+        @include defaultTextStyle(51px, 700, $color: #667085);
+        /* 106.75px */
+    }
+}
+
+main.User__Savol_Javob {
+    width: auto;
+    margin:{
+        right: 75px;
+    };
+    .savol_javob__date {
+        margin: 0 auto;
+    }
+    .user_chat__block {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .user_chat {
+            height: 78px;
+            display: flex;
+            padding: 0 50px;
+            align-items: center;
+            justify-content: center;
+            gap: 21px;
+            flex-shrink: 0;
+            border-radius: 20px 20px 0px 20px;
+            border: 1px solid #EAECF0;
+            background: #FFF;
+            @include defaultTextStyle(30px, 700, $color: #667085);
+
+            margin: {
+                left: auto;
+            }
+        }
+    }
+
+    .admin_chat__block {
+        margin-top: 108px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .admin_chat {
+            margin: {
+                right: auto;
+            }
+
+            height: 78px;
+            display: flex;
+            padding: 0 50px;
+            align-items: center;
+            justify-content: center;
+            gap: 21px;
+            flex-shrink: 0;
+            border-radius: 20px 20px 20px 0px;
+            border: 1px solid #EAECF0;
+            background: #FFF;
+            @include defaultTextStyle(30px, 700, $color: #667085)
+        }
+    }
+}

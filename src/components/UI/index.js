@@ -1,3 +1,3 @@
 import UstozCard from "./ustozCard";
-
-export { UstozCard };
+import SavolJavobInput from './savol_javob__input'
+export { UstozCard,SavolJavobInput };

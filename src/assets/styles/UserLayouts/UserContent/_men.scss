@@ -6,77 +6,13 @@
     background-color: $color-background;
     display: flex;
     flex-direction: column;
-
+    margin-left: 310px;
+    width: calc(100% - 310px)!important;
     padding: {
         top: 40px;
         left: 40px !important;
         right: 22px !important;
+        bottom: 12px;
     }
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .user-nick {
-            @include defaultTextStyle(36px, 900)
-        }
-
-        .user-instruction {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-
-            .checkout,
-            .bell,
-            .settings {
-                cursor: pointer;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                background: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                /* Shadow */
-                box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
-            }
-
-            .my_account {
-                display: flex;
-                flex-direction: row;
-                align-items: end;
-
-                .name {
-                    color: #101828;
-                    font-family: Abhaya Libre;
-                    font-size: 19px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 125%;
-                    /* 23.75px */
-                }
-
-                .another {
-                    color: #667085;
-                    font-family: Abhaya Libre;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 175%;
-                    /* 24.5px */
-                }
-
-                .profile {
-                    margin: 0;
-                    padding: 0;
-
-                    img {
-                        border-radius: 50%;
-                        width: 60px;
-                        height: 60px;
-                    }
-                }
-            }
-        }
-    }
+  
 }
