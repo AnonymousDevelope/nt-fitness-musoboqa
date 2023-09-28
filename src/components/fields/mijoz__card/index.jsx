@@ -1,7 +1,7 @@
 import React from 'react'
 import { Phone,UserIcon,Calendar } from '../../../assets/react-icons'
 import { Ustoz } from '../../../assets/images/png'
-const index = ({children}) => {
+const index = ({children,photoCard}) => {
     return (
         <main className='men'>
             <div className="main-title">
@@ -10,12 +10,12 @@ const index = ({children}) => {
             <div className="card">
                 <div className="row justify-content-between">
                     <div className="col-md-4">
-                        <div className="user-profile">
-                            <img src={Ustoz} alt="" />
+                        <div className="profile">
+                            <img src={photoCard ? photoCard : Ustoz} alt="" />
                         </div>
                     </div>
                     <div className="col-md-8">
-                        <div className="user-info">
+                        <div className="info">
                             <div className="row justify-content-between">
                                 <div className="col-md-7">
                                     <h3 className='name'>Komilov Botir</h3>

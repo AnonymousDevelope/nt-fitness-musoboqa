@@ -45,5 +45,14 @@
             border: none;
             @include defaultTextStyle(18px, 400, $color: #fff);
         }
+        .ozgartirish,
+        .ochirish {
+            transition: all 0.2s linear;
+            outline: none;
+
+            &:active {
+                transform: scale(0.93);
+            }
+        }
     }
 }

@@ -34,11 +34,12 @@ main {
         padding: 40px 17px;
 
         .col-md-4 {
-            .user-profile {
+            .profile {
                 flex-shrink: 0;
 
                 img {
-                    width: 100%;
+                    width: 559px;
+                    height: auto;
                     border-radius: 50%;
                 }
             }
@@ -58,7 +59,7 @@ main {
         }
 
         .col-md-8 {
-            .user-info {
+            .info {
                 width: 100%;
                 height: auto;
                 flex-shrink: 0;

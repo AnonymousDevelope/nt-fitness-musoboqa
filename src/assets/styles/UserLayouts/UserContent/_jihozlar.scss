@@ -110,10 +110,6 @@ main.jihozlar {
                 border-radius: 40px;
                 border: 2px solid var(--color-purple, #4D44B5);
                 @include defaultTextStyle(18px, 400, $color: $color-purple);
-
-                &_text {
-                    @include defaultTextStyle(18px, 400, $color: $color-purple);
-                }
             }
 
             .sotib_olish {
@@ -131,11 +127,6 @@ main.jihozlar {
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
                 border: none;
                 @include defaultTextStyle(18px, 400, $color: #fff);
-
-
-                &_text {
-                    @include defaultTextStyle(18px, 400, $color: #fff);
-                }
             }
 
             .savatga_qoshish,
