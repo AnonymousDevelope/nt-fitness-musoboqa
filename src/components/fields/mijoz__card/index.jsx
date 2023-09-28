@@ -1,7 +1,7 @@
 import React from 'react'
 import { Phone,UserIcon,Calendar } from '../../../assets/react-icons'
 import { Ustoz } from '../../../assets/images/png'
-const index = () => {
+const index = ({children}) => {
     return (
         <main className='men'>
             <div className="main-title">
@@ -86,7 +86,9 @@ const index = () => {
                     <div className="empty_rect">
                     </div>
                 </div>
-
+                <div className="row">
+                    {children}
+                </div>
             </div>
         </main>
     )
