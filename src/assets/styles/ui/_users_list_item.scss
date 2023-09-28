@@ -1,0 +1,31 @@
+.users_list_item {
+    cursor: pointer;
+    display: flex;
+    width: 277px;
+    height: 104px;
+    padding: 20px 25px;
+    align-items: center;
+    gap: 21px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #EAECF0;
+    background: #FFF;
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $color-gray;
+    }
+
+    .user_name {
+        @include defaultTextStyle(15px,700,$color:#101828);
+        /* 18.75px */
+    }
+    .user_message_short{
+        @include defaultTextStyle(14px,700,$color:#667085);
+    }
+}

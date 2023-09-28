@@ -3,13 +3,11 @@
     background-color: $color-background;
     display: flex;
     flex-direction: column;
-
     padding: {
         top: 40px;
         left: 40px !important;
         right: 22px !important;
     }
-
     .amallar {
         display: flex;
         flex-direction: row;

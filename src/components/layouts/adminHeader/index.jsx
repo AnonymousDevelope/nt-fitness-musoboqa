@@ -18,7 +18,7 @@ function index({ titlename = "Mijozlar" }) {
                     <div className="row align-items-end">
                         <div className="col-7 row">
                             <div className="col-12 name">
-                                John Doe
+                                Ochilov.M
                             </div>
                             <div className="col-12 another">
                                 Admin

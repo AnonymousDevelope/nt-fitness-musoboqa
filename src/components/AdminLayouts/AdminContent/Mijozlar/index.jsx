@@ -21,7 +21,6 @@ const index = () => {
             </button>
           </div>
         </MijozCard>
-
       </section>
     </>
   )

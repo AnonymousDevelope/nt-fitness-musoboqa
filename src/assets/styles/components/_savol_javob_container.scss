@@ -2,10 +2,16 @@
     width: 100%;
     background-color: rgba(221, 252, 245, 0.82);
     height: 600px;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        display: hidden;
+        width: 0;
+    }
     padding: {
         top: 16px;
         right: 23px;
         left: 23px;
+        bottom: 12px;
     }
     margin: {
         left: auto;

@@ -1,0 +1,95 @@
+.admin_savol_javob {
+    margin-left: 310px;
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    width: 1250px;
+
+    padding: {
+        top: 40px;
+        left: 40px !important;
+        right: 22px !important;
+    }
+
+    .user_profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+
+        .name {
+            @include defaultTextStyle(26px, 700, $color: #101828);
+            /* 32.5px */
+        }
+
+        .phone_number {
+            @include defaultTextStyle(14px, 700, $color: #667085);
+            /* 24.5px */
+        }
+    }
+
+    .admin_savol_javob_container {
+        margin-top: 26px;
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+
+        .users_list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .savol_javob_container {
+            width: 100%;
+
+            .savol_javob_input {
+                .savol_javob_tugmalari {
+                    .sent_message {
+                        width: 150px;
+                    }
+                }
+            }
+
+            .user_chat_block {
+                display: flex;
+                gap: 12px;
+                flex-direction: column;
+
+                .user_message {
+                    display: flex;
+                    width: 260px;
+                    height: 91.028px;
+                    padding: 0px 25px 11px 25px;
+                    align-items: center;
+                    gap: 21px;
+                    flex-shrink: 0;
+                    border-radius: 20px 20px 20px 0px;
+                    border: 1px solid #EAECF0;
+                    background: #FFF;
+                    @include defaultTextStyle(30px, 700, #667085)
+                }
+            }
+
+            .admin_chat_block {
+                display: flex;
+                gap: 12px;
+                flex-direction: column;
+                margin-top: 91px;
+                .admin_message {
+                    display: flex;
+                    width: 384px;
+                    height: 91.028px;
+                    padding: 0px 0px 11px 25px;
+                    align-items: center;
+                    gap: 21px;
+                    flex-shrink: 0;
+                    border-radius: 20px 20px 0px 20px;
+                    border: 1px solid #EAECF0;
+                    background: #FFF;
+                    @include defaultTextStyle(30px, 700, #667085);
+                }
+            }
+        }
+    }
+}
