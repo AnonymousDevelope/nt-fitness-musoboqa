@@ -5,10 +5,13 @@ import { MijozCard } from '../../../fields'
 function index() {
   return (
     <>
-      <UserHeader />
+      <UserHeader titlename='Mijozlar' />
+      <div className="amallar">
+          
+      </div>
       <MijozCard />
     </>
   )
-}   
+}
 
 export default index

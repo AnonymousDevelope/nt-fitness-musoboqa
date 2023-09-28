@@ -3,7 +3,7 @@ import { Phone,UserIcon,Calendar } from '../../../assets/react-icons'
 import { Ustoz } from '../../../assets/images/png'
 const index = ({children,photoCard}) => {
     return (
-        <main className='men'>
+        <main className=''>
             <div className="main-title">
                 <h3>Mijoz Ma'lumotlari</h3>
             </div>
@@ -93,5 +93,4 @@ const index = ({children,photoCard}) => {
         </main>
     )
 }
-
 export default index

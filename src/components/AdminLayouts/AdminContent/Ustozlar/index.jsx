@@ -40,7 +40,6 @@ const index = () => {
        <UstozCard className="ustozCard"/>
        <UstozCard className="ustozCard"/>
        <UstozCard className="ustozCard"/>
-    
       </div>
       <Pagination className="ustozlar__pagination" children=" 1-12 dan   18 ta   " item1={1} item2={2} item3={3}/>
     </section>

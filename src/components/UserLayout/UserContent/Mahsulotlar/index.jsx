@@ -1,12 +1,13 @@
 import React from 'react'
 import { UserHeader } from '../../../layouts'
 import { Mahsulot } from '../../../../assets/images/png'
-import { Calendar,Finance } from '../../../../assets/react-icons'
+import { Calendar, Finance } from '../../../../assets/react-icons'
+import { MijozCard } from '../../../fields'
 function index() {
   return (
     <>
       <UserHeader titlename='Mahsulotlar' />
-      <main className='mahsulotlar'>
+      {/* <main className='mahsulotlar'>
         <div className="main-title">
           <h3>
             Mahsulot ma'lumotlari
@@ -43,12 +44,12 @@ function index() {
                       </div>
                     </div>
                     <div className="mahsulot_instruct">
-                    <div className="icon"><Finance /></div>
-                    <div className="column">
-                      <div className="mahsulot__instruct_title">Narxi</div>
-                      <div className="mahsulot__instruct_narx">130$</div>
+                      <div className="icon"><Finance /></div>
+                      <div className="column">
+                        <div className="mahsulot__instruct_title">Narxi</div>
+                        <div className="mahsulot__instruct_narx">130$</div>
+                      </div>
                     </div>
-                  </div>
                   </div>
                 </div>
               </div>
@@ -59,20 +60,26 @@ function index() {
               </div>
             </div>
             <div className="amallar">
-                <button className="savatga_qoshish">
-                  {/* <span aria-disabled="true" className='savatga_qoshish_text'> */}
-                    savatga qo'shish
-                  {/* </span> */}
-                </button>  
-                <button className="sotib_olish">
-                  {/* <span className='sotib_olish_text'> */}
-                    sotib olish
-                  {/* </span> */}
-                </button>  
+              <button className="savatga_qoshish">
+                savatga qo'shish
+              </button>
+              <button className="sotib_olish">
+                sotib olish
+              </button>
             </div>
           </div>
         </div>
-      </main>
+      </main> */}
+      <MijozCard photoCard={Mahsulot}>
+        <div className="amallar">
+          <button className="savatga_qoshish">
+            savatga qo'shish
+          </button>
+          <button className="sotib_olish">
+            sotib olish
+          </button>
+        </div>
+      </MijozCard>
     </>
   )
 }

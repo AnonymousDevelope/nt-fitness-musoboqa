@@ -49,6 +49,8 @@
         margin-top: 33px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+
         .icon__user {
             width: 35.326px;
             height: 34px;
@@ -56,32 +58,26 @@
             padding-left: 8px;
             border-radius: 40px;
             background: var(--color-gray-3, #A098AE);
-            
         }
 
-        .Toifa {
-            padding-left: 10px;
+        .Toifa,.Kuni {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
             p {
-                color: var(--color-gray-3, #A098AE);
-                font-family: Poppins;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                margin: 0;
+                @include defaultTextStyle(14px, 400, $color: $color-gray-3);
+                margin-bottom: 0.15rem;
             }
 
             span {
-                color: var(--color-text, #303972);
                 text-shadow: 0px 2.512089252471924px 2.512089252471924px rgba(0, 0, 0, 0.25);
-                font-family: Poppins;
-                font-size: 11.304px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
+                @include defaultTextStyle(12px,600)
+                // 11.304 600 
             }
         }
-        .kalendar{
+        .kalendar {
             margin-left: 87px;
         }
     }
