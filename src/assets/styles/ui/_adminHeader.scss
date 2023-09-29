@@ -1,0 +1,59 @@
+.ustozlar__header {
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 48px 15px 50px;
+
+    .header__subtitle {
+        color: var(--color-text, #303972);
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .header__right {
+        display: flex;
+        align-items: center;
+
+        .qunSet {
+            width: 60px;
+            height: 60px;
+            padding: 15px;
+            border-radius: 40px;
+            background: var(--color-white, #FFF);
+            box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+            margin-right: 20px;
+        }
+
+        .header__title {
+            h5 {
+                color: var(--color-text, #303972);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            span {
+                color: var(--color-gray-3, #A098AE);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .user__img {
+            width: 60px;
+            height: 60px;
+            border-radius: 40px;
+            background: var(--color-gray-2, #C1BBEB);
+            margin-left: 11px;
+        }
+    }
+}
