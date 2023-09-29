@@ -3,15 +3,16 @@
 .asosiy__dashboard {
     margin-left: 310px;
     display: flex;
+    width: calc(100% - 310px);
     // justify-content: space-between;
 }
 
 .dashboard {
-    width: 1180px;
+    width: 1566px;
     background: var(--color-background, #D8EDF7);
     padding: 50px;
     // display: none;
-    
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -42,13 +43,14 @@
                 margin-left: 16px;
             }
         }
-        .sms__pege{
+
+        .sms__pege {
             cursor: pointer;
         }
     }
 
     .dashboard__info {
-        width: 1080px;
+        width: 100%;
         height: 172px;
         border-radius: 20px;
         background: var(--color-white, #FFF);
@@ -89,7 +91,7 @@
 }
 
 .admin__info {
-    width: 1080px;
+    width: 100%;    
     border-radius: 20px;
     background: var(--color-white, #FFF);
     padding: 32px;
@@ -211,7 +213,7 @@
 }
 
 .mijozlar__info {
-    width: 1081px;
+    width: 100%;
     border-radius: 20px;
     background: var(--color-white, #FFF);
     padding: 32px;
@@ -258,7 +260,8 @@
             span:nth-child(3) {
                 width: 207px;
                 padding-left: 76px;
-            }  
+            }
+
             span:nth-child(4) {
                 width: 80px;
                 padding-left: 25px;

@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import UserSidebar from "../../components/UserLayout/UserSidebar"
 import { Outlet } from "react-router-dom";
 import { UserHeader } from "../../components/layouts";
-const index = () => {
+const index = memo( ()=> {
   return (
     <>
       <section className="User">
@@ -15,6 +15,5 @@ const index = () => {
       </section >
     </>
   )
-
-}
+})
 export default index;
