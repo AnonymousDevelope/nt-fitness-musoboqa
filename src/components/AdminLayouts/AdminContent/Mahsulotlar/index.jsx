@@ -1,8 +1,14 @@
 import React from 'react'
+import { AdminMahsulotCard } from '../../../UI'
 
 const index = () => {
   return (
-    <div>index</div>
+    <section className="admin_mahsulotlar">
+      <AdminMahsulotCard />
+      <AdminMahsulotCard />
+      <AdminMahsulotCard />
+      <AdminMahsulotCard />
+    </section>
   )
 }
 

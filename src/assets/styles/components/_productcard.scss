@@ -47,9 +47,10 @@
             }
         }
     }
-    .product__delete{
+    .product__delete_edit{
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        gap: 12px;
     }
 }

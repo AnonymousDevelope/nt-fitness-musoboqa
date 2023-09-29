@@ -2,6 +2,7 @@
     width: 100%;
     background-color: rgba(221, 252, 245, 0.82);
     height: 600px;
+    border-radius: 1rem;
     overflow-y: auto;
     &::-webkit-scrollbar{
         display: hidden;

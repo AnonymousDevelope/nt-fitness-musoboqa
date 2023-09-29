@@ -1,15 +1,17 @@
 import React from 'react'
 import { Product } from "../../../assets/images/png"
-import { Trash } from '../../../assets/react-icons'
+import { Edit, Trash } from '../../../assets/react-icons'
 import { Link } from 'react-router-dom'
 function index({
   product_name = "Trinajor runner",
   product_purpose = "Yugurish uchun",
   product_company = "Doys Rong",
   product_price = "130 $",
+  edit = false,
+  onClick,
 }) {
   return (
-    <div className="product__card">
+    <div onClick={onClick} className="product__card">
       <div className="column">
         <div className="product__image">
           <img src={Product} alt="" />
@@ -24,7 +26,16 @@ function index({
             <span className="product_price">{product_price}</span>
           </div>
         </div>
-        <div className="product__delete">
+        <div className="product__delete_edit">
+          {
+            edit ? (
+              <Link>
+                <Edit />
+              </Link>
+            ):(
+              ""
+            )
+          }
           <Link>
             <Trash />
           </Link>
