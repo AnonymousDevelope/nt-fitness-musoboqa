@@ -2,14 +2,15 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .admin-nick {
         @include defaultTextStyle(36px, 900)
     }
+
     .admin-instruction {
         display: flex;
         flex-direction: row;
         gap: 15px;
-
         .checkout,
         .bell,
         .settings {

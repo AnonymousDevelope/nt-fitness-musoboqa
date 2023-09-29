@@ -6,9 +6,9 @@ function index() {
   return (
     <>
       <UserHeader titlename='Mijozlar' />
-      <div className="amallar">
+      {/* <div className="amallar">
           
-      </div>
+      </div> */}
       <MijozCard />
     </>
   )

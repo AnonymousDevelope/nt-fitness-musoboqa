@@ -5,11 +5,10 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - 310px);
-
     padding: {
         top: 40px;
         left: 40px !important;
-        right: 22px !important;
+        right: 20px !important;
     }
 
     .amallar {
@@ -62,9 +61,8 @@
     }
 
     background: var(--color-background, #D8EDF7);
-
     .mijozlar__table {
-        // width: 1390px;
+        width: 1200px;
         background: #FFF;
         margin: 20px 50px 23px 40px;
 

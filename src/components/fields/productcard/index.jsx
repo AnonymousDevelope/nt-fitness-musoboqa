@@ -7,6 +7,7 @@ function index({
   product_purpose = "Yugurish uchun",
   product_company = "Doys Rong",
   product_price = "130 $",
+  photoProduct = Product,
   edit = false,
   onClick,
 }) {
@@ -14,7 +15,7 @@ function index({
     <div onClick={onClick} className="product__card">
       <div className="column">
         <div className="product__image">
-          <img src={Product} alt="" />
+          <img width="299px" height="259px" src={photoProduct ? photoProduct : Product} alt="" />
         </div>
         <div className="product_info">
           <div className="column">
