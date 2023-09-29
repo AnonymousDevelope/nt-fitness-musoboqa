@@ -1,30 +1,3 @@
-import React from 'react'
-<<<<<<< HEAD
-import { MijozCard } from '../../../fields'
-import { AdminHeader } from '../../../layouts'
-// import 
-const index = () => {
-  return (
-    <>
-      <section className='mijozlar__card'>
-        <AdminHeader />
-        <MijozCard photoCard={""}>
-          <div className="amallar">
-            <button className="ozgartirish">
-              {/* <span aria-disabled="true" className='savatga_qoshish_text'> */}
-              o'zgartirish
-              {/* </span> */}
-            </button>
-            <button className="ochirish">
-              {/* <span className='sotib_olish_text'> */}
-              o'chirish
-              {/* </span> */}
-            </button>
-          </div>
-        </MijozCard>
-      </section>
-    </>
-=======
 import { AdminHeader, AdminSearchPlus } from '../../../UI'
 import { ButtonIcon, Deleti, Edit } from '../../../../assets/react-icons'
 import { userImg } from '../../../../assets/images/svg'
@@ -129,7 +102,6 @@ const index = () => {
         </tr>
       </table>
     </section>
->>>>>>> master
   )
 }
 
