@@ -3,12 +3,12 @@
     background-color: $color-background;
     display: flex;
     flex-direction: column;
-    width: 1250px;
-
+    width: calc(100% - 310px);
+    height: 100vh;
     padding: {
         top: 40px;
-        left: 40px !important;
-        right: 22px !important;
+        left: 80px !important;
+        right: 100px !important;
     }
 
     .user_profile {
@@ -76,6 +76,9 @@
                 gap: 12px;
                 flex-direction: column;
                 margin-top: 91px;
+                margin: {
+                    left: auto;
+                };
                 .admin_message {
                     display: flex;
                     width: 384px;
