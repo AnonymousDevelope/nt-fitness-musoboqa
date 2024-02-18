@@ -1,36 +1,52 @@
 import { Suspense } from "react";
 import { Loader } from "./components/layouts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Asosiy, Jihozlar, Mahsulotlar, Mijozlar, SavolJavob, Sitatistika, Ustozlar, YangiUstoz } from "./components/AdminLayouts/AdminContent";
-import {Men,BuyurtmalarimUser,JihozlarUser,MahsulotlarUser,SavoljavobUser,StatistikaUser,UstozlarUser, Savat} from "./components/UserLayout/UserContent"
-import { Admin, Error, Login, User } from "./pages";
+import {
+  Asosiy,
+  Jihozlar,
+  Mahsulotlar,
+  Mijozlar,
+  SavolJavob,
+  Sitatistika,
+  Ustozlar,
+  YangiUstoz,
+} from "./components/AdminLayouts/AdminContent";
+import {
+  Men,
+  BuyurtmalarimUser,
+  JihozlarUser,
+  MahsulotlarUser,
+  SavoljavobUser,
+  StatistikaUser,
+  UstozlarUser,
+  Savat,
+} from "./components/UserLayout/UserContent";
+import { Admin, Error, Forgot, Login, Register, User } from "./pages";
 const App = () => {
-
-  // const Verify = lazy(() => import("./pages/VerifyCode"));
-  // const ResendCode = lazy(() => import("./pages/ResendCode"));
-  // const Registration = lazy(() => import("./pages/Registration"));
-  // const ResetPassword = lazy(() => import("./pages/ResetPassword"));
-  // const ForgotPassword = lazy(() => import("./pages/ForgotPassword"));
-
   const routes = createBrowserRouter([
     {
-      path: "/",
+      path: "/forgot",
+      element: <Forgot />,
+    },    
+    {
+      path: "/login",
       element: <Login />,
+    },   
+    {
+      path: "/register",
+      element: <Register />,
     },
     {
       path: "/admin",
       element: <Admin />,
       children: [
-
         {
           path: "",
           element: <Asosiy />,
-        
-        },   
+        },
         {
           path: "asosiy",
           element: <Asosiy />,
-        
         },
         {
           path: "ustozlar",
@@ -57,10 +73,10 @@ const App = () => {
           element: <Sitatistika />,
         },
         {
-          path:"yangi_ustoz_qoshish",
-          element:<YangiUstoz />
-        }
-      ]
+          path: "yangi_ustoz_qoshish",
+          element: <YangiUstoz />,
+        },
+      ],
     },
     {
       path: "/user",
@@ -68,98 +84,52 @@ const App = () => {
       children: [
         {
           path: "",
-          element:<Men /> ,
+          element: <Men />,
         },
         {
-          path:"men",
-          element:<Men />,
+          path: "men",
+          element: <Men />,
         },
         {
-          path:"ustozlar",
-          element:<UstozlarUser/>
+          path: "ustozlar",
+          element: <UstozlarUser />,
         },
         {
-          path:"buyurtmalarim",
-          element:<BuyurtmalarimUser />
+          path: "buyurtmalarim",
+          element: <BuyurtmalarimUser />,
         },
         {
-          path:"jihozlar",
-          element:<JihozlarUser />
+          path: "jihozlar",
+          element: <JihozlarUser />,
         },
         {
-          path:'savol-javob',
-          element:<SavoljavobUser />,
+          path: "savol-javob",
+          element: <SavoljavobUser />,
         },
         {
-          path:"Statistika",
-          element:<StatistikaUser />
+          path: "Statistika",
+          element: <StatistikaUser />,
         },
         {
-          path:"maxsulotlar",
-          element:<MahsulotlarUser />
+          path: "maxsulotlar",
+          element: <MahsulotlarUser />,
         },
         {
-          path:"savat",
-          element:<Savat />
-        }
-      ]
+          path: "savat",
+          element: <Savat />,
+        },
+      ],
     },
     {
       path: "*",
       element: <Error />,
     },
-
-    // }
-    // {
-    //   path: "/",
-    //   element: <Home />,
-    // },
-    // ],
-    // },   
-    // {
-    //   path: "/admin",
-    //   element: <Admin />,
-    //   children: [
-    //     {
-    //       path: "/",
-    //       element: <Admin />,
-    //     },
-    //   ],
-    // },
-
-    // {
-    //   path: "*",
-    //   element: <Error />,
-    // },
-
-    // {
-    //   path: "/registration",
-    //   element: <Registration />,
-    // },
-    // {
-    //   path: "/verify",
-    //   element: <Verify />,
-    // },
-    // {
-    //   path: "/forgotPassword",
-    //   element: <ForgotPassword />,
-    // },
-    // {
-    //   path: "/resetPassword",
-    //   element: <ResetPassword />,
-    // },
-    // {
-    //   path: "/resendCode",
-    //   element: <ResendCode />,
-    // },
   ]);
 
   return (
-    <>
-      <Suspense fallback={<Loader />}>
-        <RouterProvider router={routes} />
-      </Suspense>
-    </>
+    <Suspense fallback={<Loader />}>
+      <RouterProvider router={routes} />
+    </Suspense>
   );
 };
 

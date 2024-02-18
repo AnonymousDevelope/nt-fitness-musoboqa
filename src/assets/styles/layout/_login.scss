@@ -98,8 +98,8 @@
             height: 48px;
             border-radius: 4px;
             background: #EAEAEA;
-            padding: 12px 280px 9px 22px;
-            margin-bottom: 30px;
+            padding: 12px 22px 9px 22px;
+            margin-bottom: 20px;
         }
 
         input[type="email"]::placeholder {
@@ -121,7 +121,7 @@
         }
 
         .login__password {
-            margin-top: 10px;
+            margin: 10px 0;
             display: block;
             // width: 440px;
             // height: 48px;
@@ -147,13 +147,14 @@
 
         .Forgot {
             color: var(--Baby-Blue, #66BCE8);
+            display: block;
             font-family: Poppins;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             margin-top: 10px;
-            margin-bottom: 47px;
+            margin-bottom: 17px;
         }
 
         .login__submit {

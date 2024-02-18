@@ -1,7 +1,26 @@
 import React, { memo } from "react";
 import { Logo } from "../../assets/images/png";
 import {  Circle, Information, Ruka, SmsIcon } from "../../assets/react-icons";
+import { Link, useNavigate } from "react-router-dom";
+import "../../firebase/config";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 const index = memo(() => {
+  const navigate = useNavigate();
+
+
+  const hendleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+    console.log(e.target[0].value);
+    console.log(e.target[1].value);
+    signInWithEmailAndPassword(
+      getAuth(),
+      e.target[0].value,
+      e.target[1].value
+    )
+      .then(() => navigate("/user"))
+      .catch((e) => console.error(e.error, "error"));
+  };
   return (
     <section className="login">
       <div className="login__left">
@@ -14,7 +33,7 @@ const index = memo(() => {
       <div className="login__right">
         {
           true ? (
-            <form className="login__form">
+            <form className="login__form" onSubmit={hendleSubmit}>
               <Ruka className="ruka" />
               <h1>Welcome back!</h1>
               <p>Please login to access your account.</p>
@@ -26,10 +45,10 @@ const index = memo(() => {
               <label className="login__password" htmlFor="password">
                 <input type="password" id="password" placeholder="Type your pasword" />
               </label>
-              <h6 className="Forgot">Forgot Pasword?</h6>
+              <Link to='/forgot' className="Forgot">Forgot Pasword?</Link>
               <button className="login__submit">Log In</button>
 
-              <h5 className="account"> Don't have an account? <span>Sign Up</span></h5>
+              <h5 className="account"> Don't have an account?  <Link to='/register'>Register</Link></h5>
             </form>
           ) : (
             <form className="sms__forma">
